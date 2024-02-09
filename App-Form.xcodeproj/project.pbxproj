@@ -13,9 +13,20 @@
 		8051C84F2B768D6D005F3E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8051C84D2B768D6D005F3E21 /* Main.storyboard */; };
 		8051C8512B768D6E005F3E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8051C8502B768D6E005F3E21 /* Assets.xcassets */; };
 		8051C8542B768D6E005F3E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8051C8522B768D6E005F3E21 /* LaunchScreen.storyboard */; };
+		8051C85D2B768DDE005F3E21 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051C85C2B768DDE005F3E21 /* LaunchScreenViewController.swift */; };
+		8051C85F2B768E01005F3E21 /* UsersSavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051C85E2B768E01005F3E21 /* UsersSavedViewController.swift */; };
+		8051C8632B768E8C005F3E21 /* MDCFilledTextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051C8622B768E8C005F3E21 /* MDCFilledTextFieldExtensions.swift */; };
+		8051C8652B768EA3005F3E21 /* ControllersExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051C8642B768EA3005F3E21 /* ControllersExtensions.swift */; };
+		8051C8682B768EC2005F3E21 /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051C8672B768EC2005F3E21 /* DataPersistenceManager.swift */; };
+		8051C86A2B768ED2005F3E21 /* ModelDataPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051C8692B768ED2005F3E21 /* ModelDataPersistence.swift */; };
+		8051C86E2B768F09005F3E21 /* TextStringsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051C86D2B768F09005F3E21 /* TextStringsApp.swift */; };
+		8051C8722B768F41005F3E21 /* ModelUserRealmSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051C8712B768F41005F3E21 /* ModelUserRealmSwift.swift */; };
+		8051C8742B768F57005F3E21 /* RealmSwiftManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051C8732B768F57005F3E21 /* RealmSwiftManager.swift */; };
+		E3F20919372593166BB4999D /* Pods_App_Form.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AAB64269FB95A209A54F22 /* Pods_App_Form.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5410DF37B538BD709E1CE0B7 /* Pods-App-Form.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-Form.debug.xcconfig"; path = "Target Support Files/Pods-App-Form/Pods-App-Form.debug.xcconfig"; sourceTree = "<group>"; };
 		8051C8442B768D6D005F3E21 /* App-Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-Form.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8051C8472B768D6D005F3E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8051C8492B768D6D005F3E21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,17 @@
 		8051C8502B768D6E005F3E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8051C8532B768D6E005F3E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8051C8552B768D6E005F3E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8051C85C2B768DDE005F3E21 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		8051C85E2B768E01005F3E21 /* UsersSavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersSavedViewController.swift; sourceTree = "<group>"; };
+		8051C8622B768E8C005F3E21 /* MDCFilledTextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDCFilledTextFieldExtensions.swift; sourceTree = "<group>"; };
+		8051C8642B768EA3005F3E21 /* ControllersExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersExtensions.swift; sourceTree = "<group>"; };
+		8051C8672B768EC2005F3E21 /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
+		8051C8692B768ED2005F3E21 /* ModelDataPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataPersistence.swift; sourceTree = "<group>"; };
+		8051C86D2B768F09005F3E21 /* TextStringsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStringsApp.swift; sourceTree = "<group>"; };
+		8051C8712B768F41005F3E21 /* ModelUserRealmSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUserRealmSwift.swift; sourceTree = "<group>"; };
+		8051C8732B768F57005F3E21 /* RealmSwiftManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSwiftManager.swift; sourceTree = "<group>"; };
+		91429C2916EFB88BB3220BAC /* Pods-App-Form.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-Form.release.xcconfig"; path = "Target Support Files/Pods-App-Form/Pods-App-Form.release.xcconfig"; sourceTree = "<group>"; };
+		C1AAB64269FB95A209A54F22 /* Pods_App_Form.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_Form.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F20919372593166BB4999D /* Pods_App_Form.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,8 @@
 			children = (
 				8051C8462B768D6D005F3E21 /* App-Form */,
 				8051C8452B768D6D005F3E21 /* Products */,
+				91178DC180F0031AA38B0BD2 /* Pods */,
+				E4D44216115FCE6EA4BB75CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,89 @@
 		8051C8462B768D6D005F3E21 /* App-Form */ = {
 			isa = PBXGroup;
 			children = (
+				8051C8662B768EB2005F3E21 /* Model */,
+				8051C8602B768E6C005F3E21 /* View */,
+				8051C85B2B768DBF005F3E21 /* Controller */,
 				8051C8472B768D6D005F3E21 /* AppDelegate.swift */,
 				8051C8492B768D6D005F3E21 /* SceneDelegate.swift */,
-				8051C84B2B768D6D005F3E21 /* ViewController.swift */,
 				8051C84D2B768D6D005F3E21 /* Main.storyboard */,
 				8051C8502B768D6E005F3E21 /* Assets.xcassets */,
 				8051C8522B768D6E005F3E21 /* LaunchScreen.storyboard */,
 				8051C8552B768D6E005F3E21 /* Info.plist */,
 			);
 			path = "App-Form";
+			sourceTree = "<group>";
+		};
+		8051C85B2B768DBF005F3E21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8051C85C2B768DDE005F3E21 /* LaunchScreenViewController.swift */,
+				8051C84B2B768D6D005F3E21 /* ViewController.swift */,
+				8051C85E2B768E01005F3E21 /* UsersSavedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8051C8602B768E6C005F3E21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8051C8612B768E79005F3E21 /* Extensions */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8051C8612B768E79005F3E21 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8051C8622B768E8C005F3E21 /* MDCFilledTextFieldExtensions.swift */,
+				8051C8642B768EA3005F3E21 /* ControllersExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8051C8662B768EB2005F3E21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8051C86B2B768EE8005F3E21 /* DataPersistence */,
+				8051C86C2B768EF3005F3E21 /* Realm */,
+				8051C86D2B768F09005F3E21 /* TextStringsApp.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8051C86B2B768EE8005F3E21 /* DataPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				8051C8672B768EC2005F3E21 /* DataPersistenceManager.swift */,
+				8051C8692B768ED2005F3E21 /* ModelDataPersistence.swift */,
+			);
+			path = DataPersistence;
+			sourceTree = "<group>";
+		};
+		8051C86C2B768EF3005F3E21 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				8051C8712B768F41005F3E21 /* ModelUserRealmSwift.swift */,
+				8051C8732B768F57005F3E21 /* RealmSwiftManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		91178DC180F0031AA38B0BD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5410DF37B538BD709E1CE0B7 /* Pods-App-Form.debug.xcconfig */,
+				91429C2916EFB88BB3220BAC /* Pods-App-Form.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4D44216115FCE6EA4BB75CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1AAB64269FB95A209A54F22 /* Pods_App_Form.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8051C8582B768D6E005F3E21 /* Build configuration list for PBXNativeTarget "App-Form" */;
 			buildPhases = (
+				29DF3A2F5360B531323D7784 /* [CP] Check Pods Manifest.lock */,
 				8051C8402B768D6D005F3E21 /* Sources */,
 				8051C8412B768D6D005F3E21 /* Frameworks */,
 				8051C8422B768D6D005F3E21 /* Resources */,
+				1C33A6B3E57E9D52E332FF89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +234,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C33A6B3E57E9D52E332FF89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App-Form/Pods-App-Form-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App-Form/Pods-App-Form-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App-Form/Pods-App-Form-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29DF3A2F5360B531323D7784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App-Form-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8051C8402B768D6D005F3E21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8051C8632B768E8C005F3E21 /* MDCFilledTextFieldExtensions.swift in Sources */,
+				8051C8682B768EC2005F3E21 /* DataPersistenceManager.swift in Sources */,
 				8051C84C2B768D6D005F3E21 /* ViewController.swift in Sources */,
+				8051C85F2B768E01005F3E21 /* UsersSavedViewController.swift in Sources */,
 				8051C8482B768D6D005F3E21 /* AppDelegate.swift in Sources */,
+				8051C8742B768F57005F3E21 /* RealmSwiftManager.swift in Sources */,
+				8051C85D2B768DDE005F3E21 /* LaunchScreenViewController.swift in Sources */,
+				8051C8652B768EA3005F3E21 /* ControllersExtensions.swift in Sources */,
+				8051C86E2B768F09005F3E21 /* TextStringsApp.swift in Sources */,
+				8051C86A2B768ED2005F3E21 /* ModelDataPersistence.swift in Sources */,
+				8051C8722B768F41005F3E21 /* ModelUserRealmSwift.swift in Sources */,
 				8051C84A2B768D6D005F3E21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +439,14 @@
 		};
 		8051C8592B768D6E005F3E21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5410DF37B538BD709E1CE0B7 /* Pods-App-Form.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2UXU5XB3BP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App-Form/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,13 +454,18 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Form-App.App-Form";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.App-Form";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,12 +474,14 @@
 		};
 		8051C85A2B768D6E005F3E21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91429C2916EFB88BB3220BAC /* Pods-App-Form.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2UXU5XB3BP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App-Form/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,13 +489,18 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Form-App.App-Form";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.App-Form";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

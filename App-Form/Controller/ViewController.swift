@@ -102,7 +102,7 @@ class ViewController: UIViewController {
         }
         
         getUsersButton.isHidden = usersArray.count > 0 ? false : true
-        addNewUserButton.isHidden = itemSelected > 0 ? false : true
+        addNewUserButton.isHidden = itemSelected >= 0 ? false : true
     }
     
     private func saveWithDataPersistence(){
@@ -200,7 +200,7 @@ extension ViewController: UsersSavedDelegate {
         }
         self.usersArray = users
         
-        addNewUserButton.isHidden = itemSelected > 0 ? false : true
+        addNewUserButton.isHidden = itemSelected >= 0 ? false : true
         getUsersButton.isHidden = usersArray.count > 0 ? false : true
     }
 }

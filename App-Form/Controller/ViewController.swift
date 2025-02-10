@@ -64,7 +64,14 @@ class ViewController: UIViewController {
         sscrollView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor)
         sscrollView.centerXTo(view.centerXAnchor)
         
-        
+        dumieContent()
+    }
+    
+    private func dumieContent(){
+        let allEngines = Array(accountEngine.allCases.map { $0.rawValue} )
+        let all_Engines = Array(accountEngine.allCases )
+        print("allEngines: ", allEngines)
+        print("all_Engines: ", all_Engines )
     }
     
     private func allDataFilled() -> Int {
@@ -98,7 +105,15 @@ class ViewController: UIViewController {
                 usersArray.append(ModelDataPersistence(name: user.name, firstSurName: user.firstSurName, secondSurname: user.secondSurname, email: user.email, cellPhone: user.cellPhone, idRealm: user.id ))
             }
         }else{
-            usersArray = DataPersistenceManager.shared.getDataUsers() ?? []
+            switch DataPersistenceManager.shared.getDataUsers() {
+                case .success(let res):
+                    print("Saved Users: ", res)
+                    usersArray = res
+                case .failure(let err):
+                    usersArray = []
+                printLocation(functionName: #function, fileName: #file, lineNumber: #line, columnNumber: #column, dsohandle: #dsohandle)
+                    print("DataPersistenceManager.shared.getDataUsers().err: ", err )
+            }
         }
         
         getUsersButton.isHidden = usersArray.count > 0 ? false : true
@@ -107,7 +122,14 @@ class ViewController: UIViewController {
     
     private func saveWithDataPersistence(){
         usersArray.append(ModelDataPersistence(name: textFieldsArray[0].text!, firstSurName: textFieldsArray[1].text!, secondSurname: textFieldsArray[2].text!, email: textFieldsArray[3].text!, cellPhone: textFieldsArray[4].text!))
-        DataPersistenceManager.shared.saveDataUsers(users: usersArray)
+        do {
+            _ = try DataPersistenceManager.shared.saveDataUsers(users: usersArray)
+        }catch let err as DataPersistenceError {
+            print("Error custom: ", err.message)
+        }catch {
+            print("Error generico: ", error.localizedDescription)
+        }
+        
     }
     
     private func updateDataPersistence(){
@@ -117,7 +139,13 @@ class ViewController: UIViewController {
         usersArray[itemSelected].email = textFieldsArray[3].text!
         usersArray[itemSelected].cellPhone = textFieldsArray[4].text!
         
-        DataPersistenceManager.shared.saveDataUsers(users: usersArray)
+        do {
+            _ = try DataPersistenceManager.shared.saveDataUsers(users: usersArray)
+        }catch let err as DataPersistenceError {
+            print("Error custom: ", err.message)
+        }catch {
+            print("Error generico: ", error.localizedDescription)
+        }
     }
     
     private func saveWithRealmSwift(){
@@ -203,4 +231,15 @@ extension ViewController: UsersSavedDelegate {
         addNewUserButton.isHidden = itemSelected >= 0 ? false : true
         getUsersButton.isHidden = usersArray.count > 0 ? false : true
     }
+}
+
+enum accountEngine: String, CaseIterable {
+    case alnova = "Al"
+    case finacle = "Fn"
+}
+
+enum engineIterable: String {
+    case alnova = "Al"
+    case finacle = "Fn"
+    
 }

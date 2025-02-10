@@ -76,7 +76,7 @@ extension UsersSavedViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        var config = UISwipeActionsConfiguration(actions: [])
+        
         if usersArray.count > 0 {
             let deleteSwipe = UIContextualAction(style: .destructive, title: TextStringsApp.delete) { [weak self] action, view, completion in
                 
@@ -85,7 +85,13 @@ extension UsersSavedViewController: UITableViewDelegate {
                     self?.usersArray.remove(at: indexPath.row)
                 }else{
                     self?.usersArray.remove(at: indexPath.row)
-                    DataPersistenceManager.shared.saveDataUsers(users: self?.usersArray ?? [])
+                    do {
+                        _ = try DataPersistenceManager.shared.saveDataUsers(users: self?.usersArray ?? [])
+                    }catch let err as DataPersistenceError {
+                        print("Error custom: ", err.message)
+                    }catch {
+                        print("Error generico: ", error.localizedDescription)
+                    }
                 }
                 
                 self?.delegate?.userSeleted(item: -1, users: self?.usersArray ?? [])
@@ -94,8 +100,7 @@ extension UsersSavedViewController: UITableViewDelegate {
                 
             }
             deleteSwipe.backgroundColor = .systemRed
-            config = UISwipeActionsConfiguration(actions: [deleteSwipe])
-            return config
+            return UISwipeActionsConfiguration(actions: [deleteSwipe])
         }else{
             return UISwipeActionsConfiguration(actions: [])
         }

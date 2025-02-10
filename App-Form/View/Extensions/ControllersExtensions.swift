@@ -23,4 +23,7 @@ extension UIViewController {
         navigationItem.title = title
     }
     
+    func printLocation(functionName: String, fileName: String, lineNumber: Int, columnNumber: Int, dsohandle: UnsafeRawPointer) {
+        print("##### Function: \(functionName), File: \(fileName), Line: \(lineNumber), Column: \(columnNumber), dsohandle: \(dsohandle)")
+    }
 }
